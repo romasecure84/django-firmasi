@@ -128,7 +128,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # TASKS:
 # TODO: Ana Sehifeni goster
 # TODO: Haqqimizda, elaqe kimi Sehifeler ucun  view yarat
-# TODO: Django makemigrate & migrate
+# TODO: Django makemigrations & migrate
 # TODO: DTL strukturunu yarat
 # TODO: Ana Sehifedeeki qarisiq strukturdan qurtul
 # TODO: HTML dosyalarini yarat
