@@ -2,7 +2,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from random import randint
 
-def home(request):
-    context = {'platform': f'Django Platformu Istifade Edildi: {randint(1, 100)} '}
+def home_view(request):
+    # context = {'platform': f'Django Platformu Istifade Edildi: {randint(1, 100)} '}
+    context = {}
     return render(request, 'page/home_page.html', context)
 
+def about_us_view(request):
+    context = dict()
+    return render(request, 'page/about_us_view.html', context)
+
+def contact_us_view(request):
+    context = dict()
+    return render(request, 'page/contact_us_view.html', context)

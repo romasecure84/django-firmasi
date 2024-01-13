@@ -123,3 +123,17 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# TASKS:
+# TODO: Ana Sehifeni goster
+# TODO: Haqqimizda, elaqe kimi Sehifeler ucun  view yarat
+# TODO: Django makemigrate & migrate
+# TODO: DTL strukturunu yarat
+# TODO: Ana Sehifedeeki qarisiq strukturdan qurtul
+# TODO: HTML dosyalarini yarat
+# TODO: DRY?
+# TODO: App ucun urls.py yarat
+# TODO: Statik dosyalari Islet
+# TODO: Sehifeleri Fake DB icerisinde tutub SLUG ile cagirmaga calismaq
+# 
