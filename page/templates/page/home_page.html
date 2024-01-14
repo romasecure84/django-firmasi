@@ -1,10 +1,6 @@
 {% extends 'core/base.html' %}
 
-
-{% block container %}
-    
-    
-
+{% block container-fluid %}
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -48,9 +44,9 @@
         </button>
     </div>
     <!-- carousel end -->
-
+    <!-- hero content -->
     <div class="container-fluid mb-4">
-        <!-- hero content -->
+       
         <div class="bg-dark bg-gradient p-4 border-bottom border-top">
             <div class="col-sm-8 offset-sm-2">
                 <div class="p-5 mb-4 bg-body-tertiary rounded-3">
@@ -82,9 +78,16 @@
         </div>
     </div>
     <!-- about us end -->
+{% endblock container-fluid %}
+
+{% block container %}
+    
+    
+
+
 
     <!-- Products -->
-    <div class="container">
+    
         <div class="row">
             <div class="col-sm-12">
                 <h2 class="text-center">Mehsullarimiz</h2>
