@@ -11,21 +11,21 @@
     <!-- navbar -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Django Firmasi</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Django Firmasi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Ana Sehife</a>
+              <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Ana Sehife</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="haqqimizda.html">Haqqimizda</a>
+              <a class="nav-link {% if request.path == '/haqqimizda/' %}active{% endif %}" href="{% url 'about_us' %}">Haqqimizda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="vizyonumuz.html">Vizyonumuz</a>
+              <a class="nav-link {% if request.path == '/vizyonumuz/' %}active{% endif %}" href="{% url 'vision' %}">Vizyonumuz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="elaqe.html">Elaqe</a>
+              <a class="nav-link {% if request.path == '/elaqe/' %}active{% endif %}" href="{% url 'contact_us' %}">Elaqe</a>
             </li>
           </ul>
         </div>

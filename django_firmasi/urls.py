@@ -24,10 +24,10 @@ from page.views import (
     )
 
 urlpatterns = [
-    path("", home_view,),
-    path("haqqimizda/", about_us_view,),
-    path("elaqe/", contact_us_view,),
-    path("vizyonumuz/", vision_view,),
+    path("", home_view, name='home'),
+    path("haqqimizda/", about_us_view, name='about_us'),
+    path("elaqe/", contact_us_view, name='contact_us'),
+    path("vizyonumuz/", vision_view, name='vision'),
     path("admin/", admin.site.urls),
 ]
 
