@@ -119,21 +119,27 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'static_files'
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
+
+
 # TASKS:
-# TODO: Ana Sehifeni goster
-# TODO: Haqqimizda, elaqe kimi Sehifeler ucun  view yarat
-# TODO: Django makemigration & migrate
-# TODO: DTL strukturunu yarat
-# TODO: Ana Sehifedeeki qarisiq strukturdan qurtul
-# TODO: HTML dosyalarini yarat
-# TODO: DRY?
-# TODO: App ucun urls.py yarat
-# TODO: Statik dosyalari Islet
+# done: Ana Sehifeni goster
+# done: Haqqimizda, elaqe kimi Sehifeler ucun  view yarat
+# done: Django makemigration & migrate
+# done: DTL strukturunu yarat
+# done: Ana Sehifedeeki qarisiq strukturdan qurtul
+# done: HTML dosyalarini yarat
+# done: DRY?
+# done: App ucun urls.py yarat
+# done: Statik dosyalari Islet
 # TODO: Sehifeleri Fake DB icerisinde tutub SLUG ile cagirmaga calismaq
 # 
