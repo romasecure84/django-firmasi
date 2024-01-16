@@ -132,6 +132,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 # TASKS:
+# DONE: Sehifeleri Fake DB icerisinde tutub SLUG ile cagirmaga calismaq
 # done: Ana Sehifeni goster
 # done: Haqqimizda, elaqe kimi Sehifeler ucun  view yarat
 # done: Django makemigration & migrate
@@ -141,5 +142,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # done: DRY?
 # done: App ucun urls.py yarat
 # done: Statik dosyalari Islet
-# TODO: Sehifeleri Fake DB icerisinde tutub SLUG ile cagirmaga calismaq
-# 
+# TODO: Basqa bir app elave ederek Modular strukturu basa dusmeye calismaq

@@ -9,13 +9,13 @@
                 <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Ana Sehife</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {% if request.path == '/haqqimizda/' %}active{% endif %}" href="{% url 'about_us' %}">Haqqimizda</a>
+                <a class="nav-link {% if request.path == '/haqqimizda/' %}active{% endif %}" href="/haqqimizda/">Haqqimizda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {% if request.path == '/vizyonumuz/' %}active{% endif %}" href="{% url 'vision' %}">Vizyonumuz</a>
+                <a class="nav-link {% if request.path == '/vizyonumuz/' %}active{% endif %}" href="/vizyonumuz/">Vizyonumuz</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {% if request.path == '/elaqe/' %}active{% endif %}" href="{% url 'contact_us' %}">Elaqe</a>
+                <a class="nav-link {% if request.path == '/elaqe/' %}active{% endif %}" href="/elaqe/">Elaqe</a>
               </li>
             </ul>
           </div>

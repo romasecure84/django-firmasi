@@ -46,7 +46,12 @@ def vision_view(request):
 
 def page_view(request, slug):
     result = list(filter(lambda x:(x['url'] == slug), FAKE_DB_PAGES))
-    context = dict()
+
     if result:
-        return render(request, "page/contact_us.html", context)
+        context = dict(
+            page_title = result[0]['title'],
+            FAKE_DB_PROJECTS=FAKE_DB_PROJECTS,
+            detail= result[0]['detail'],
+        )
+        return render(request, "page/page_detail.html", context)
     raise Http404
