@@ -22,6 +22,7 @@ from django.urls import path, include
 
 # reseption :)
 urlpatterns = [
+    path('mehsullar/', include('product.urls'),), 
     path('', include('page.urls'),), # page Application icerisindeki urls.py ' dan alinir..
     path("admin/", admin.site.urls),
 ]
