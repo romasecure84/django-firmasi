@@ -57,7 +57,9 @@ ROOT_URLCONF = "django_firmasi.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            BASE_DIR / 'templates',
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -144,4 +146,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # done: DRY?
 # done: App ucun urls.py yarat
 # done: Statik dosyalari Islet
-# TODO: Basqa bir app elave ederek Modular strukturu basa dusmeye calismaq
+# done: Basqa bir app elave ederek Modular strukturu basa dusmeye calismaq
